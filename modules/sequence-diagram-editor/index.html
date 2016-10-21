@@ -10,7 +10,9 @@
     <link href="lib/font-wso2_1.1.0/css/font-wso2.min.css" rel="stylesheet" type="text/css"/>
     <link href="lib/theme-wso2_1.0/css/theme-wso2.css" rel="stylesheet" type="text/css"/>
     <link href="lib/jquery-ui_v1.12.1/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="lib/js-tree-v3.3.2/themes/default/style.css" rel="stylesheet" type="text/css"/>
     <link href="lib/nanoscroller_0.8.7/nanoscroller.css" rel="stylesheet" type="text/css"/>
+    <link href="css/file-explorer/styles.css" rel="stylesheet" type="text/css"/>
     <link href="css/layout.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 
@@ -110,7 +112,7 @@
         <!-- Start: page content : first row -->
         <div id="page-content-first-row" class="row">
             <!-- Start: breadcrumb row -->
-            <div class="row" style="display: none"><!-- TODO make this visible -->
+            <div class="row">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">HolidayBooking</a></li>
                     <li class="breadcrumb-item"><a href="#">PackageSelection</a></li>
@@ -126,7 +128,7 @@
                 </div>
                 <!--Ace editor view end-->
                 <!-- Start: left container -->
-                <div id="left-container" class="col-sm-2" style="display: none" ><!-- TODO make this visible -->
+                <div id="left-container" class="col-sm-2">
                     <!-- Start: file explorer -->
                     <div id="tree-container">
                         <div id="tree-action-bar">
@@ -144,34 +146,14 @@
                            </span>
                         </span>
                         </div>
-                        <div>
-                            <ul id="tree"  class="row tree-view tree-view-lines">
-                                <li aria-expanded="true"><span>HolidayBooking</span>
-                                    <ul>
-                                        <li>BookingHistory</li>
-                                        <li>PackageSelection
-                                            <ul>
-                                                <li>Reports
-                                                    <ul>
-                                                        <li>Report1</li>
-                                                        <li>Report2</li>
-                                                        <li>Report3</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Employee Maint.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Human Resources</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div id="tree" >
                         </div>
                     </div>
                     <!-- End: file explorer -->
                 </div>
                 <!-- End: left container -->
                 <!-- Start: right container -->
-                <div id="right-container" class="col-sm-12"><!-- TODO resize to col-sm-10 once left container made visible -->
+                <div id="right-container" class="col-sm-10">
                     <div class="container-fluid">
                         <div class="row">
                             <!-- Start: resource tabs -->
@@ -247,6 +229,7 @@
 <!-- Jquery/Jquery UI JS -->
 <script src="lib/jquery_v1.9.1/jquery-1.9.1.min.js"></script>
 <script src="lib/jquery-ui_v1.12.1/jquery-ui.min.js"></script>
+<script src="lib/js-tree-v3.3.2/jstree.js"></script>
 <script src="lib/nanoscroller_0.8.7/jquery.nanoscroller.min.js"></script>
 <script src="lib/theme-wso2_1.0/js/theme-wso2.js"></script>
 <script src="lib/bootstrap_v3.3.6/js/bootstrap.js"></script>

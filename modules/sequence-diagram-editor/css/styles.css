@@ -136,7 +136,7 @@ svg text::selection { background: none; }
 /*//////////////////////////////////////////////////*/
 /** File Explorer related styles |Start -> **/
 #tree-container {
-    background-color: #272727;
+    background-color: whitesmoke;
     border: solid #373737;
 }
 
