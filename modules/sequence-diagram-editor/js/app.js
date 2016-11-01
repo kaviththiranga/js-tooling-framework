@@ -15,9 +15,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
-
-
 var eventManager = new Diagrams.Models.EventManager({});
 var lifeLineOptions = {};
 lifeLineOptions.class = "lifeline";
@@ -56,8 +53,6 @@ var createPoint = function (x, y) {
     return new GeoCore.Models.Point({'x': x, 'y': y});
 };
 
-var diagramD3el = undefined;
-
 var createLifeLine = function (title, center, cssClass, utils, parameters, textModel, type) {
     return new SequenceD.Models.LifeLine({
         title: title,
@@ -69,6 +64,8 @@ var createLifeLine = function (title, center, cssClass, utils, parameters, textM
         type: type
     });
 };
+
+
 // Create main tool group
 var mainToolGroup = new Tools.Models.ToolGroup({
     toolGroupName: "Main Elements",
